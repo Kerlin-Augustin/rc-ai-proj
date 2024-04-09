@@ -1,5 +1,5 @@
 import { CSSProperties } from "react";
-import { Input } from "@mui/material";
+import { Input, Button } from "@mui/material";
 
 const PromptPage = () => {
   const styles: Record<string, CSSProperties> = {
@@ -12,8 +12,10 @@ const PromptPage = () => {
     },
     input: {
       border: "2px solid #693183",
-      // padding: "0 20em",
       borderRadius: "5px",
+    },
+    button: {
+      marginTop: ".5em",
     },
   };
 
@@ -26,8 +28,13 @@ const PromptPage = () => {
           placeholder="Ask Anything"
           multiline={true}
           rows="5"
-          sx={{ width: "50em" }}
+          sx={{ width: "50em", padding: "1em" }}
         />
+      </div>
+      <div style={styles.button}>
+        <Button variant="contained" style={{ backgroundColor: "#693183" }}>
+          Send
+        </Button>
       </div>
     </div>
   );

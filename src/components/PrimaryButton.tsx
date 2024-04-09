@@ -1,21 +1,10 @@
 import { CSSProperties } from "react";
-
+import { Button } from "@mui/material";
 interface PrimaryButtonProps {
   label: string;
   backgroungColor?: string;
   margin?: string;
 }
-
-const styles: Record<string, CSSProperties> = {
-  button: {
-    color: "white",
-    padding: "10px",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
-    marginLeft: "10px",
-  },
-};
 
 const PrimaryButton = ({
   label,
@@ -23,11 +12,14 @@ const PrimaryButton = ({
   margin,
 }: PrimaryButtonProps) => {
   const buttonColor: CSSProperties = {
-    ...styles.button,
     backgroundColor: backgroungColor,
     margin: margin,
   };
-  return <button style={buttonColor}>{label}</button>;
+  return (
+    <Button variant="contained" style={buttonColor}>
+      {label}
+    </Button>
+  );
 };
 
 export default PrimaryButton;

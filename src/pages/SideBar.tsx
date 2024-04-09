@@ -39,7 +39,7 @@ const SideBar = () => {
           <PrimaryButton label="Enable Text-To-Speech" />
         </div>
         <div style={styles.buttons}>
-          <PrimaryButton label="UserName" margin="1em 0 1em 0" />
+          <PrimaryButton label="UserName" margin="1em 0" />
         </div>
       </div>
     </div>
