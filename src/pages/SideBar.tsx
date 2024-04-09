@@ -1,5 +1,5 @@
 import { CSSProperties } from "react";
-import PrimaryButton from "./PrimaryButton";
+import PrimaryButton from "../components/PrimaryButton";
 
 const styles: Record<string, CSSProperties> = {
   sideBar: {

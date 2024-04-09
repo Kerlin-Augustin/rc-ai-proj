@@ -1,5 +1,6 @@
 // import { useState } from "react";
-import SideBar from "./components/SideBar";
+import PromptPage from "./pages/PromptPage";
+import SideBar from "./pages/SideBar";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
       <SideBar />
-      <div>App</div>
+      <PromptPage />
     </>
   );
 }
