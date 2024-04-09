@@ -1,6 +1,7 @@
 import { CSSProperties } from "react";
 import PrimaryButton from "../components/PrimaryButton";
 import ChatList from "../components/ChatList";
+import NewChat from "../components/NewChat";
 
 const styles: Record<string, CSSProperties> = {
   sideBar: {
@@ -24,16 +25,19 @@ const styles: Record<string, CSSProperties> = {
     textAlign: "center",
     width: "100%",
   },
+  ul: {
+    padding: "0",
+  },
 };
 
 const SideBar = () => {
   return (
     <div style={styles.sideBar}>
-      <div>
-        <h2 style={styles.h2}>New Chat</h2>
+      <div style={styles.h2}>
+        <NewChat />
       </div>
       <div>
-        <ul>
+        <ul style={styles.ul}>
           <ChatList />
         </ul>
       </div>
