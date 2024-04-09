@@ -32,7 +32,10 @@ const PromptPage = () => {
         />
       </div>
       <div style={styles.button}>
-        <Button variant="contained" style={{ backgroundColor: "#693183" }}>
+        <Button
+          variant="contained"
+          style={{ backgroundColor: "#693183", margin: "0 0 0 52em" }}
+        >
           Send
         </Button>
       </div>
