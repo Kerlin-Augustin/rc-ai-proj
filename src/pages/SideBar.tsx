@@ -1,5 +1,6 @@
 import { CSSProperties } from "react";
 import PrimaryButton from "../components/PrimaryButton";
+import ChatList from "../components/ChatList";
 
 const styles: Record<string, CSSProperties> = {
   sideBar: {
@@ -32,7 +33,9 @@ const SideBar = () => {
         <h2 style={styles.h2}>New Chat</h2>
       </div>
       <div>
-        <ul>Description of Chat</ul>
+        <ul>
+          <ChatList />
+        </ul>
       </div>
       <div style={styles.buttonsContainer}>
         <div style={styles.buttons}>

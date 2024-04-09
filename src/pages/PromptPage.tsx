@@ -25,7 +25,7 @@ const PromptPage = () => {
       <div style={styles.input}>
         <Input
           disableUnderline={true}
-          placeholder="Ask Anything"
+          placeholder="Ask Anything..."
           multiline={true}
           rows="5"
           sx={{ width: "50em", padding: "1em" }}
