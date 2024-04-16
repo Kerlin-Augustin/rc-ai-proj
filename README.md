@@ -15,6 +15,16 @@ npm ci
 
 run npm start in the terminal window. (this runs a local server)
 
+## Daily steps
+Go to the main branch and pull all new changes that may have happened since you last coded.
+
+Switch off of the main branch to your own branch
+
+If you are creating a new branch from the new pulled changes you can start coding. If you are cd'ing back to a previous branch you were working on, do git merge main from that branch you want to work on.
+
+# Warning
+DO NOT PUSH CODE TO MAIN BRANCH!!!
+
 ### React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
