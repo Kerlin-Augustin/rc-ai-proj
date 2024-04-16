@@ -38,7 +38,7 @@ const SideBar = () => {
       </div>
       <div>
         <ul style={styles.ul}>
-          <ChatList />
+          <ChatList chatList={[]} />
         </ul>
       </div>
       <div style={styles.buttonsContainer}>

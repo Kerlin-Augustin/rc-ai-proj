@@ -1,8 +1,10 @@
 import uuid from "react-uuid";
 
-const ChatList = () => {
-  const chatList: string[] = [];
+interface ChatListProps {
+  chatList: string[];
+}
 
+const ChatList = ({ chatList }: ChatListProps) => {
   const styles = {
     chatList: {
       border: "1px solid #693183",
